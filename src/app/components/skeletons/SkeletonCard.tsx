@@ -1,6 +1,6 @@
 const SkeletonCard = () => {
   return (
-    <div className="border rounded-md p-3 animate-pulse flex flex-col">
+    <div data-testid="skeleton-card" aria-label="Tarjeta de carga" className="border rounded-md p-3 animate-pulse flex flex-col">
       <div className="h-40 w-full bg-gray-300 rounded-md mb-2" />
       <div className="flex-1">
         <div className="h-4 bg-gray-300 rounded w-3/4 mb-2" />

@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es">
       <body>
-          <div className="min-h-screen bg-gray-50">
+          <div data-testid="layout" className="min-h-screen bg-gray-50">
             <header className="bg-white shadow p-4">
               <div className="max-w-6xl mx-auto"> <h1 className="text-xl font-bold">Catálogo</h1> </div>
             </header>
