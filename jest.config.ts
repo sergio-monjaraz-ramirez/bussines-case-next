@@ -32,7 +32,7 @@ const config: Config = {
   // collectCoverageFrom: undefined,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: "coverage",
+  coverageDirectory: "../coverage",
 
   coverageProvider: 'v8',
 
@@ -149,7 +149,7 @@ const config: Config = {
   // setupFiles: [],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  setupFilesAfterEnv: ['../jest.setup.ts'],
   // setupFilesAfterEnv: [],
 
   // The number of seconds after which a test is considered as slow and reported as such in the results.
