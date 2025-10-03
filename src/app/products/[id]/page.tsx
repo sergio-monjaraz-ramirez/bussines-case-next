@@ -1,8 +1,8 @@
 import ProductDetail from '@/app/components/ProductDetail'
 import React from 'react'
 
-export async function generateMetadata({ params }: { params: { id: number } }) {
-  const { id } = params;
+export async function generateMetadata(context: { params: Promise<{ id: number }> }) {
+  const { id } = await context.params;
 
   const product = await fetch(`https://dummyjson.com/products/${id}`).then(res => res.json()).catch(() => null);
 
@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: { params: { id: number } }) {
   };
 }
 
-const ProductPage = ({ params }: { params: {id: number } }) => {
-  const { id } = params 
+const ProductPage = async ({ params }: { params: Promise<{ id: number }> }) => {
+  const { id } = await params;
 
   return (
     <div className="mx-auto p-4">
