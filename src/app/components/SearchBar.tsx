@@ -12,7 +12,7 @@ export default function SearchBar({ onChange }: SearchProps) {
   }
 
   return (
-    <div className="w-full" data-testid="search-bar-container">
+    <div className="w-full" data-testid="search-bar">
       <input
         placeholder="Buscar productos..."
         value={search}

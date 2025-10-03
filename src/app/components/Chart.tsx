@@ -2,7 +2,6 @@ import { DataChartProps } from '@/types';
 import { XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts';
 
 const ChartReviews: React.FC<DataChartProps> = ({ data }) => {
-  console.log(data);
   return (
     <ResponsiveContainer
       width="100%"
